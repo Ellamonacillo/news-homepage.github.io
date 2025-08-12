@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="News Homepage">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/output.css">
+
+  <title>Frontend Mentor | News homepage</title>
+</head>
+<body>
+
+  <div class="max-w-screen-xl mx-auto">
+    <!-- Navigation -->
+    <header>
+      <nav aria-label="Main Navigation" class="w-full">
+        <!-- Mobile Nav -->
+        <div class="flex items-center justify-between xl:hidden">
+          <a href="#"><img src="./assets/images/logo.svg" alt="Website Logo" /></a>
+
+          <button id="menu-toggle" class="menu-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open mobile navigation">
+            <img src="./assets/images/icon-menu.svg" alt="Menu Open Icon" class="icon-open" />
+          </button>
+        </div>
+
+        <div id="mobile-nav" class="mobile-nav hidden flex xl:hidden">
+          <div class="drawer-nav">
+            <div class="flex justify-end">
+              <button id="menu-close" aria-label="Close mobile navigation">
+                <img src="./assets/images/icon-menu-close.svg" alt="Close menu" />
+              </button>
+              <!-- Mobile Links -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Desktop Nav -->
+        <div class="hidden xl:flex desktop-nav">
+          <a href="#"><img src="./assets/images/logo.svg" alt="Website Logo" /></a>
+          <!-- Desktop Links -->
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="main-container">
+        <!-- Hero Section -->
+        <section>
+          <img src="./assets/images/image-web-3-mobile.jpg" alt="Web-3" class="md:hidden" />
+          <img src="./assets/images/image-web-3-desktop.jpg" alt="Web-3" class="hidden md:flex"/>
+          <div class="hero-content">
+            <h1>The Bright Future of Web 3.0?</h1>
+            <div>
+              <p>
+                We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+                But is it really fulfilling its promise?
+              </p>
+              <button type="button">Read more</button>
+            </div>          
+          </div>
+        </section>
+
+        <!-- Aside -->
+        <aside aria-labelledby="aside-heading">
+          <!-- Aside Content -->
+        </aside>
+      </div>
+
+      <!-- Article  -->
+      <article>
+        <!-- Article Content -->
+      </article>
+    </main>
+
+    <footer>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" target="_blank" aria-label="View Frontend Mentor in a new tab" rel="noopener">Frontend Mentor</a>. 
+      Coded by <a href="https://mariellamonacillo.netlify.app" target="_blank" aria-label="View MGM website in a new tab" rel="noopener">MGM</a>.
+    </footer>
+  </div>
+  
+  <script src="./src/script.js"></script>
+</body>
+</html>
